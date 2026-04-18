@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: aqua;
+}
+.icon img{
+    height: 30px;
+    width: 30px;
+}
+
+.nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    /* margin: 20px; */
+}
+
+.nav-left{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.nav-right{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+}
+.services ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+}
+.btn button{
+    background-color: black;
+    padding: 14px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.solutions .dropdown .dropdown-menu{
+    list-style: none;
+    cursor: pointer;
+    
+}
+.solutions {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    width: 100px;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    overflow: scroll;
+    background-color: black;
+    padding: 10px;
+}
+.solutions:hover .dropdown-menu {
+    display: block;
+}
+.menu-btn{
+    display: none;
+}
+@media screen and (max-width: 700px) {
+  .nav-right {
+    display: none;
+
+  }
+  .menu-btn{
+    display: block;
+  }
+}
